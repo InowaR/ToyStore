@@ -1,8 +1,6 @@
 package org.store.model.service;
 
-import org.store.model.toy.Toy;
-
 public interface ServiceMethods {
-    void addToy(int id, String name);
-    void deleteToy(Toy toy);
+    void addToy(String name, int numberOfToys, float frequency);
+    void showToys();
 }

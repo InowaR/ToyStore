@@ -11,12 +11,20 @@ public class Store implements StoreMethods {
     }
 
     @Override
+    public int getLengthArray() {
+        return toys.size();
+    }
+
+    @Override
     public void addToy(Toy toy) {
         toys.add(toy);
     }
 
     @Override
-    public void deleteToy(Toy toy) {
-        toys.remove(toy);
+    public void showToys() {
+        for (Toy toy : toys) {
+            System.out.println(toy);
+        }
     }
+
 }
