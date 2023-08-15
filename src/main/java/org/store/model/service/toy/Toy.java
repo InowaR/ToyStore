@@ -1,9 +1,9 @@
-package org.store.model.toy;
+package org.store.model.service.toy;
 
 public class Toy {
     private int id;
     private String name;
-    private float frequency;
+    private double frequency;
 
     public Toy(int id, String name, float frequency) {
         this.id = id;
@@ -19,7 +19,7 @@ public class Toy {
         return name;
     }
 
-    public float getFrequency() {
+    public double getFrequency() {
         return frequency;
     }
 

@@ -1,13 +1,17 @@
 package org.store.presenter;
 
+import org.store.model.awarding.AwardToys;
 import org.store.model.service.Service;
+import org.store.model.service.toy.Toy;
 import java.util.Scanner;
 
 public class Presenter implements PresenterMethods{
     private Service service;
+    private AwardToys awarding;
 
     public Presenter() {
         this.service = new Service();
+        this.awarding = new AwardToys();
     }
 
     @Override
@@ -25,5 +29,12 @@ public class Presenter implements PresenterMethods{
     @Override
     public void showToys() {
         service.showToys();
+    }
+
+    @Override
+    public void makeTheLottery() {
+        Toy toy = service.makeTheLottery();
+        awarding.addToy(toy);
+        System.out.println("Выиграл приз: " + toy);
     }
 }

@@ -1,7 +1,9 @@
 package org.store.model.service;
 
-import org.store.model.store.Store;
-import org.store.model.toy.Toy;
+import org.store.model.service.lottery.Lottery;
+import org.store.model.service.store.Store;
+import org.store.model.service.toy.Toy;
+import java.util.ArrayList;
 
 public class Service implements ServiceMethods {
     private int id = 0;
@@ -27,5 +29,13 @@ public class Service implements ServiceMethods {
         System.out.println("Общее количество в магазине: " + store.getLengthArray());
     }
 
-
+    @Override
+    public Toy makeTheLottery() {
+        ArrayList<Double> weights = store.dataForTheLottery();
+        double sumOfWeights = weights.stream().mapToDouble(Double::doubleValue).sum();
+        double total = sumOfWeights * Math.random();
+        Lottery lottery = new Lottery(total, weights);
+        int index = lottery.playTheLottery();
+        return store.getToyByIndex(index);
+    }
 }

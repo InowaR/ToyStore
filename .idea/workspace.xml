@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="app works">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/LoadFromFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveToFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/lottery/Lottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/lottery/LotteryMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/ServiceMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/ServiceMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/store/StoreMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/store/StoreMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/toy/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/toy/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/store/StoreMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/StoreMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/toy/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/toy/Toy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" afterDir="false" />
     </list>
@@ -24,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -39,13 +43,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -63,12 +67,21 @@
       <option name="project" value="LOCAL" />
       <updated>1691955120640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="app works">
+      <option name="closed" value="true" />
+      <created>1691959073950</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691959073950</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="app works" />
+    <option name="LAST_COMMIT_MESSAGE" value="app works" />
   </component>
 </project>
