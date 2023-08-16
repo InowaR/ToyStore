@@ -6,4 +6,5 @@ public interface PresenterMethods {
     void addToy();
     void showToys();
     void makeTheLottery();
+    void saveToys();
 }

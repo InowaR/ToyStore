@@ -1,8 +1,12 @@
 package org.store.presenter;
 
 import org.store.model.awarding.AwardToys;
+import org.store.model.awarding.fileHandler.SaveLoadFile;
+import org.store.model.awarding.fileHandler.Writeable;
 import org.store.model.service.Service;
 import org.store.model.service.toy.Toy;
+
+import java.util.Queue;
 import java.util.Scanner;
 
 public class Presenter implements PresenterMethods{
@@ -37,4 +41,13 @@ public class Presenter implements PresenterMethods{
         awarding.addToy(toy);
         System.out.println("Выиграл приз: " + toy);
     }
+
+    @Override
+    public void saveToys() {
+        Queue<Toy> queue = awarding.getQueue();
+        Writeable save = new SaveLoadFile();
+        save.saveToFile(queue);
+    }
+
+
 }
