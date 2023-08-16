@@ -1,10 +1,10 @@
 package org.store;
 
-import org.store.view.View;
+import org.store.view.ConsoleUI;
 
 public class Main {
     public static void main(String[] args) {
-        View v = new View();
+        ConsoleUI v = new ConsoleUI();
         v.startApp();
     }
 }
