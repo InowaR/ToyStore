@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added save queue">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/AddToy.java" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added commands and menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/Finish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/MakeLottery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveLoadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +88,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692219030070</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added commands and menu">
+      <option name="closed" value="true" />
+      <created>1692222124505</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692222124505</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -94,6 +105,7 @@
     <MESSAGE value="app works" />
     <MESSAGE value="added lottery algorithm" />
     <MESSAGE value="added save queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="added save queue" />
+    <MESSAGE value="added commands and menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="added commands and menu" />
   </component>
 </project>

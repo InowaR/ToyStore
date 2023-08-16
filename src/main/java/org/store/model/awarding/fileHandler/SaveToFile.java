@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Queue;
 
-public class SaveLoadFile implements Writeable {
+public class SaveToFile implements Writeable {
     @Override
     public void saveToFile(Queue<Toy> queue) {
         String fileName = "toys.txt";

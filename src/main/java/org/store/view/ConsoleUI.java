@@ -3,7 +3,7 @@ package org.store.view;
 import org.store.presenter.Presenter;
 import java.util.Scanner;
 
-public class ConsoleUI implements View{
+public class ConsoleUI implements View {
     private Scanner scanner;
     private Presenter presenter;
     private Menu menu;
@@ -47,4 +47,18 @@ public class ConsoleUI implements View{
         presenter.addToy();
     }
 
+    @Override
+    public void showToys() {
+        presenter.showToys();
+    }
+
+    @Override
+    public void makeLottery() {
+        presenter.makeTheLottery();
+    }
+
+    @Override
+    public void saveToys() {
+        presenter.saveToys();
+    }
 }

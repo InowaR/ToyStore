@@ -6,4 +6,7 @@ public interface View {
     void execute();
     void printMenu();
     void addToy();
+    void showToys();
+    void makeLottery();
+    void saveToys();
 }

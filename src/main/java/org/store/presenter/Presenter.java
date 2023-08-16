@@ -1,7 +1,7 @@
 package org.store.presenter;
 
 import org.store.model.awarding.AwardToys;
-import org.store.model.awarding.fileHandler.SaveLoadFile;
+import org.store.model.awarding.fileHandler.SaveToFile;
 import org.store.model.awarding.fileHandler.Writeable;
 import org.store.model.service.Service;
 import org.store.model.service.toy.Toy;
@@ -45,9 +45,7 @@ public class Presenter implements PresenterMethods{
     @Override
     public void saveToys() {
         Queue<Toy> queue = awarding.getQueue();
-        Writeable save = new SaveLoadFile();
+        Writeable save = new SaveToFile();
         save.saveToFile(queue);
     }
-
-
 }
