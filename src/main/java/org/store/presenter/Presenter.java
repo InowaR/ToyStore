@@ -40,6 +40,8 @@ public class Presenter implements PresenterMethods{
         Toy toy = service.makeTheLottery();
         awarding.addToy(toy);
         System.out.println("Выиграл приз: " + toy);
+        System.out.println("Список победителей:");
+        awarding.showToys();
     }
 
     @Override

@@ -14,7 +14,7 @@ public class Lottery implements LotteryMethods {
     public int playTheLottery() {
         int index = 0;
         for (Double weight : weights) {
-            this.total -= weight;
+            total -= weight;
             if (total <= 0) {
                 break;
             } else {

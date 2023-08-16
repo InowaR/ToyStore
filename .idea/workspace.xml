@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added commands and menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/Finish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/MakeLottery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added new commands">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToysMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/iterator/ToyIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveLoadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveToFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/lottery/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/lottery/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/StoreMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/StoreMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -96,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692222124505</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added new commands">
+      <option name="closed" value="true" />
+      <created>1692223305399</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692223305399</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -106,6 +113,7 @@
     <MESSAGE value="added lottery algorithm" />
     <MESSAGE value="added save queue" />
     <MESSAGE value="added commands and menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added commands and menu" />
+    <MESSAGE value="added new commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="added new commands" />
   </component>
 </project>

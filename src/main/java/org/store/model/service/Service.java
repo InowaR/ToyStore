@@ -7,7 +7,6 @@ import java.util.ArrayList;
 
 public class Service implements ServiceMethods {
     private int id = 0;
-
     private Store store;
 
     public Service() {
@@ -17,9 +16,9 @@ public class Service implements ServiceMethods {
     @Override
     public void addToy(String name, int numberOfToys, float frequency) {
         for (int i = 0; i < numberOfToys; i++) {
-            Toy toy = new Toy(this.id, name, frequency);
+            Toy toy = new Toy(id, name, frequency);
             store.addToy(toy);
-            this.id++;
+            id++;
         }
     }
 
