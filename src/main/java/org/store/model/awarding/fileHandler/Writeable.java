@@ -1,8 +1,9 @@
 package org.store.model.awarding.fileHandler;
 
-import org.store.model.service.toy.Toy;
-import java.util.Queue;
+import org.store.model.awarding.AwardToys;
+import java.io.IOException;
 
 public interface Writeable {
-    void saveToFile(Queue<Toy> queue);
+    void saveToFile(AwardToys awarding) throws IOException;
+    AwardToys loadFromFile() throws IOException, ClassNotFoundException;
 }

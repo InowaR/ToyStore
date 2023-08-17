@@ -1,15 +1,15 @@
 package org.store.presenter;
 
 import org.store.model.awarding.AwardToys;
-import org.store.model.awarding.fileHandler.SaveToFile;
+import org.store.model.awarding.fileHandler.SaveLoadFile;
 import org.store.model.awarding.fileHandler.Writeable;
 import org.store.model.service.Service;
 import org.store.model.service.toy.Toy;
 
-import java.util.Queue;
+import java.io.IOException;
 import java.util.Scanner;
 
-public class Presenter implements PresenterMethods{
+public class Presenter implements PresenterMethods {
     private Service service;
     private AwardToys awarding;
 
@@ -40,14 +40,25 @@ public class Presenter implements PresenterMethods{
         Toy toy = service.makeTheLottery();
         awarding.addToy(toy);
         System.out.println("Выиграл приз: " + toy);
+    }
+
+    @Override
+    public void showTheWinnerToys() {
         System.out.println("Список победителей:");
         awarding.showToys();
     }
 
     @Override
-    public void saveToys() {
-        Queue<Toy> queue = awarding.getQueue();
-        Writeable save = new SaveToFile();
-        save.saveToFile(queue);
+    public void saveToys() throws IOException {
+        Writeable save = new SaveLoadFile();
+        save.saveToFile(awarding);
+        System.out.println("Записано");
+    }
+
+    @Override
+    public void loadToys() throws IOException, ClassNotFoundException {
+        Writeable load = new SaveLoadFile();
+        this.awarding = load.loadFromFile();
+        System.out.println("Загружено");
     }
 }

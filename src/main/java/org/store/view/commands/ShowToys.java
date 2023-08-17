@@ -6,7 +6,7 @@ import org.store.view.ConsoleUI;
 public class ShowToys extends Command {
     public ShowToys(ConsoleUI consoleUI) {
         super(consoleUI);
-        description = "Показать список игрушек";
+        description = "Показать список товаров";
     }
 
     @Override

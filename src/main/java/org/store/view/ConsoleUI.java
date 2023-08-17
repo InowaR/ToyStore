@@ -1,6 +1,8 @@
 package org.store.view;
 
 import org.store.presenter.Presenter;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 public class ConsoleUI implements View {
@@ -17,7 +19,7 @@ public class ConsoleUI implements View {
     }
 
     @Override
-    public void startApp() {
+    public void startApp() throws IOException, ClassNotFoundException {
         while (work) {
             printMenu();
             execute();
@@ -31,7 +33,7 @@ public class ConsoleUI implements View {
     }
 
     @Override
-    public void execute() {
+    public void execute() throws IOException, ClassNotFoundException {
         System.out.println("Введите номер команды:");
         int numCommand = scanner.nextInt();
         menu.execute(numCommand);
@@ -58,7 +60,17 @@ public class ConsoleUI implements View {
     }
 
     @Override
-    public void saveToys() {
+    public void showTheWinnerToys() {
+        presenter.showTheWinnerToys();
+    }
+
+    @Override
+    public void saveToys() throws IOException {
         presenter.saveToys();
+    }
+
+    @Override
+    public void loadToys() throws IOException, ClassNotFoundException {
+        presenter.loadToys();
     }
 }

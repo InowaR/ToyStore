@@ -15,11 +15,6 @@ public class AwardToys implements AwardToysMethods, Serializable {
     }
 
     @Override
-    public Queue<Toy> getQueue() {
-        return queue;
-    }
-
-    @Override
     public void addToy(Toy toy) {
         queue.add(toy);
     }

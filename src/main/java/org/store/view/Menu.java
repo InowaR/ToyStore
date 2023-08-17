@@ -1,10 +1,8 @@
 package org.store.view;
 
-import org.store.view.commands.AddToy;
-import org.store.view.commands.Finish;
-import org.store.view.commands.MakeLottery;
-import org.store.view.commands.SaveToys;
+import org.store.view.commands.*;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,8 +12,11 @@ public class Menu {
     public Menu(ConsoleUI consoleUI) {
         commandList = new ArrayList<>();
         commandList.add(new AddToy(consoleUI));
+        commandList.add(new ShowToys(consoleUI));
         commandList.add(new MakeLottery(consoleUI));
+        commandList.add(new ShowTheWinnerToys(consoleUI));
         commandList.add(new SaveToys(consoleUI));
+        commandList.add(new LoadToys(consoleUI));
         commandList.add(new Finish(consoleUI));
     }
 
@@ -31,7 +32,7 @@ public class Menu {
         return stringBuilder.toString();
     }
 
-    public void execute(int choice) {
+    public void execute(int choice) throws IOException, ClassNotFoundException {
         Command command = commandList.get(choice);
         command.execute();
     }
