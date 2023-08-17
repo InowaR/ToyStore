@@ -1,7 +1,6 @@
 package org.store.view;
 
 import org.store.view.commands.*;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;

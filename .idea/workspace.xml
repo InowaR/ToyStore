@@ -4,26 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added iterator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/LoadToys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowTheWinnerToys.java" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="save and load queue and class Awarding must be fixed">
+      <change afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToysMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToysMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveToFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveLoadFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/Writeable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/Writeable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/StoreMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/store/StoreMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveLoadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/fileHandler/SaveLoadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/iterator/ToyIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/iterator/ToyIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/toy/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/toy/Toy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/AddToy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/AddToy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/LoadToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/LoadToys.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toys.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692225300540</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="save and load queue and class Awarding must be fixed">
+      <option name="closed" value="true" />
+      <created>1692232332999</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1692232332999</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -133,6 +134,7 @@
     <MESSAGE value="added commands and menu" />
     <MESSAGE value="added new commands" />
     <MESSAGE value="added iterator" />
-    <option name="LAST_COMMIT_MESSAGE" value="added iterator" />
+    <MESSAGE value="save and load queue and class Awarding must be fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="save and load queue and class Awarding must be fixed" />
   </component>
 </project>

@@ -1,7 +1,6 @@
 package org.store.view;
 
 import org.store.presenter.Presenter;
-
 import java.io.IOException;
 import java.util.Scanner;
 

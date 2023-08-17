@@ -1,7 +1,5 @@
 package org.store.presenter;
 
-import org.store.model.service.toy.Toy;
-
 import java.io.IOException;
 
 public interface PresenterMethods {

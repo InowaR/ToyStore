@@ -3,25 +3,24 @@ package org.store.model.awarding;
 import org.store.model.awarding.iterator.ToyIterator;
 import org.store.model.service.toy.Toy;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.Queue;
 
 public class AwardToys implements AwardToysMethods, Serializable {
-    private Queue<Toy> queue;
+    private ArrayList<Toy> winToys;
 
     public AwardToys() {
-        this.queue = new LinkedList<>();
+        this.winToys = new ArrayList<>();
     }
 
     @Override
     public void addToy(Toy toy) {
-        queue.add(toy);
+        winToys.add(toy);
     }
 
     @Override
     public void showToys() {
-        Iterator<Toy> iterator = new ToyIterator(queue);
+        Iterator<Toy> iterator = new ToyIterator(winToys);
         while (iterator.hasNext()) {
             Toy toy = iterator.next();
             System.out.println(toy);

@@ -6,24 +6,22 @@ import java.io.*;
 public class SaveLoadFile implements Writeable {
     @Override
     public void saveToFile(AwardToys awarding) throws IOException {
-        awarding.showToys(); // -----------------------------------------
-        String fileName = "toys.txt";
-        FileOutputStream fileOut = new FileOutputStream(fileName);
+        FileOutputStream fileOut = new FileOutputStream("toys.txt");
         ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
         objectOut.writeObject(awarding);
         objectOut.close();
         fileOut.close();
+        System.out.println("записано");
     }
 
     @Override
     public AwardToys loadFromFile() throws IOException, ClassNotFoundException {
-        String fileName = "toys.txt";
-        FileInputStream fileIn = new FileInputStream(fileName);
+        FileInputStream fileIn = new FileInputStream("toys.txt");
         ObjectInputStream objectIn = new ObjectInputStream(fileIn);
         AwardToys awarding = (AwardToys) objectIn.readObject();
-        awarding.showToys(); // -----------------------------------------
         objectIn.close();
         fileIn.close();
+        System.out.println("загружено");
         return awarding;
     }
 }

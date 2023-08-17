@@ -2,7 +2,6 @@ package org.store.view.commands;
 
 import org.store.view.Command;
 import org.store.view.ConsoleUI;
-
 import java.io.IOException;
 
 public class LoadToys extends Command {

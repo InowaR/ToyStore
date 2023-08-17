@@ -5,7 +5,6 @@ import org.store.model.awarding.fileHandler.SaveLoadFile;
 import org.store.model.awarding.fileHandler.Writeable;
 import org.store.model.service.Service;
 import org.store.model.service.toy.Toy;
-
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -52,13 +51,11 @@ public class Presenter implements PresenterMethods {
     public void saveToys() throws IOException {
         Writeable save = new SaveLoadFile();
         save.saveToFile(awarding);
-        System.out.println("Записано");
     }
 
     @Override
     public void loadToys() throws IOException, ClassNotFoundException {
         Writeable load = new SaveLoadFile();
         this.awarding = load.loadFromFile();
-        System.out.println("Загружено");
     }
 }
