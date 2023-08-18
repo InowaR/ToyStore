@@ -19,14 +19,18 @@ public class Presenter implements PresenterMethods {
 
     @Override
     public void addToy() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите название игрушки:");
-        String name = scanner.nextLine();
-        System.out.println("Введите количество игрушек:");
-        int numberOfToys = scanner.nextInt();
-        System.out.println("Введите частоту выпадения игрушки:");
-        int frequency = scanner.nextInt();
-        service.addToy(name, numberOfToys, frequency);
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Введите название игрушки:");
+            String name = scanner.nextLine();
+            System.out.println("Введите количество игрушек:");
+            int numberOfToys = scanner.nextInt();
+            System.out.println("Введите частоту выпадения игрушки:");
+            int frequency = scanner.nextInt();
+            service.addToy(name, numberOfToys, frequency);
+        } catch (NumberFormatException e) {
+            System.out.println("Неверный ввод");
+        }
     }
 
     @Override
@@ -37,8 +41,16 @@ public class Presenter implements PresenterMethods {
     @Override
     public void makeTheLottery() {
         Toy toy = service.makeTheLottery();
-        awarding.addToy(toy);
-        System.out.println("Выиграл приз: " + toy);
+        if (!awarding.getWinToys().contains(toy)) {
+            awarding.addToy(toy);
+            System.out.println("Выиграл приз: " + toy);
+        } else {
+            try {
+                makeTheLottery();
+            } catch (StackOverflowError e) {
+                System.out.println("Подарки закончились");
+            }
+        }
     }
 
     @Override

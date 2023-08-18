@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added save and remove one toy">
-      <change afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added check menu input">
+      <change afterPath="$PROJECT_DIR$/last_toy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/toys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692396351692</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added check menu input">
+      <option name="closed" value="true" />
+      <created>1692397562006</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1692397562006</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -143,7 +154,8 @@
     <MESSAGE value="save and load queue and class Awarding must be fixed" />
     <MESSAGE value="fixed save" />
     <MESSAGE value="added save and remove one toy" />
-    <option name="LAST_COMMIT_MESSAGE" value="added save and remove one toy" />
+    <MESSAGE value="added check menu input" />
+    <option name="LAST_COMMIT_MESSAGE" value="added check menu input" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
