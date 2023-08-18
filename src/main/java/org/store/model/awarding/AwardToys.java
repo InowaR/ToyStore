@@ -26,4 +26,15 @@ public class AwardToys implements AwardToysMethods, Serializable {
             System.out.println(toy);
         }
     }
+
+    @Override
+    public void saveToy() {
+        try {
+            Toy toy = winToys.get(0);
+            System.out.println(toy);  // --------------------
+            winToys.remove(toy);
+        } catch (IndexOutOfBoundsException e) {
+            System.out.println("Список пуст");
+        }
+    }
 }

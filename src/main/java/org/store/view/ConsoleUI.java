@@ -72,4 +72,9 @@ public class ConsoleUI implements View {
     public void loadToys() throws IOException, ClassNotFoundException {
         presenter.loadToys();
     }
+
+    @Override
+    public void saveToy() {
+        presenter.saveToy();
+    }
 }

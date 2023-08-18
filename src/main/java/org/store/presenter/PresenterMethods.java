@@ -9,4 +9,5 @@ public interface PresenterMethods {
     void showTheWinnerToys();
     void saveToys() throws IOException;
     void loadToys() throws IOException, ClassNotFoundException;
+    void saveToy();
 }

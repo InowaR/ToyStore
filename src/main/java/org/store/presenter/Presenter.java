@@ -58,4 +58,10 @@ public class Presenter implements PresenterMethods {
         Writeable load = new SaveLoadFile();
         this.awarding = load.loadFromFile();
     }
+
+    @Override
+    public void saveToy() {
+        System.out.println("-----------");
+        awarding.saveToy();
+    }
 }

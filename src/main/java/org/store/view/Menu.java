@@ -16,6 +16,7 @@ public class Menu {
         commandList.add(new ShowTheWinnerToys(consoleUI));
         commandList.add(new SaveToys(consoleUI));
         commandList.add(new LoadToys(consoleUI));
+        commandList.add(new Save(consoleUI));
         commandList.add(new Finish(consoleUI));
     }
 
