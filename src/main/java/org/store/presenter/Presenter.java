@@ -6,6 +6,7 @@ import org.store.model.awarding.fileHandler.Writeable;
 import org.store.model.service.Service;
 import org.store.model.service.toy.Toy;
 import java.io.IOException;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Presenter implements PresenterMethods {
@@ -28,7 +29,7 @@ public class Presenter implements PresenterMethods {
             System.out.println("Введите частоту выпадения игрушки:");
             int frequency = scanner.nextInt();
             service.addToy(name, numberOfToys, frequency);
-        } catch (NumberFormatException e) {
+        } catch (InputMismatchException e) {
             System.out.println("Неверный ввод");
         }
     }

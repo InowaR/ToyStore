@@ -2,7 +2,6 @@ package org.store.model.awarding;
 
 import org.store.model.awarding.iterator.ToyIterator;
 import org.store.model.service.toy.Toy;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Serializable;

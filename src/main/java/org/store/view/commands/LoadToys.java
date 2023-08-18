@@ -7,7 +7,7 @@ import java.io.IOException;
 public class LoadToys extends Command {
     public LoadToys(ConsoleUI consoleUI) {
         super(consoleUI);
-        description = "Загрузить подарки из файла";
+        description = "Загрузить победителей из файла";
     }
 
     @Override

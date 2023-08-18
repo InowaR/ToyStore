@@ -25,7 +25,7 @@ public class Service implements ServiceMethods {
     @Override
     public void showToys() {
         store.showToys();
-        System.out.println("Общее количество в магазине: " + store.getLengthArray());
+        System.out.println("Общее количество игрушек в магазине: " + store.getLengthArray());
     }
 
     @Override

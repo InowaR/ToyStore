@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Save extends Command {
     public Save(ConsoleUI consoleUI) {
         super(consoleUI);
-        description = "Сохранить";
+        description = "Сохранить подарок";
     }
 
     @Override

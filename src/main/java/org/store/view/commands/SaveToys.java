@@ -7,7 +7,7 @@ import java.io.IOException;
 public class SaveToys extends Command {
     public SaveToys(ConsoleUI consoleUI) {
         super(consoleUI);
-        description = "Сохранить подарки в файл";
+        description = "Сохранить всех победителей в файл";
     }
 
     @Override

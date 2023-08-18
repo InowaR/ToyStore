@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added check menu input">
-      <change afterPath="$PROJECT_DIR$/last_toy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="fixed toy save">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toys.txt" beforeDir="false" afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/AddToy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/AddToy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/LoadToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/LoadToys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/SaveToys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/ShowToys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692397562006</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed toy save">
+      <option name="closed" value="true" />
+      <created>1692399475731</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1692399475731</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -155,7 +165,8 @@
     <MESSAGE value="fixed save" />
     <MESSAGE value="added save and remove one toy" />
     <MESSAGE value="added check menu input" />
-    <option name="LAST_COMMIT_MESSAGE" value="added check menu input" />
+    <MESSAGE value="fixed toy save" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed toy save" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
