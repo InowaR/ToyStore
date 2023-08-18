@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="fixed save">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/store/view/commands/Save.java" afterDir="false" />
+    <list default="true" id="3547818c-dbe3-49f9-9501-7c5060ef01ab" name="Changes" comment="added save and remove one toy">
+      <change afterPath="$PROJECT_DIR$/toys.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToysMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/model/awarding/AwardToysMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/Presenter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/presenter/PresenterMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/ConsoleUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/store/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toys.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1692304274218</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added save and remove one toy">
+      <option name="closed" value="true" />
+      <created>1692396351692</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1692396351692</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -142,6 +142,17 @@
     <MESSAGE value="added iterator" />
     <MESSAGE value="save and load queue and class Awarding must be fixed" />
     <MESSAGE value="fixed save" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed save" />
+    <MESSAGE value="added save and remove one toy" />
+    <option name="LAST_COMMIT_MESSAGE" value="added save and remove one toy" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -36,4 +36,8 @@ public class Menu {
         Command command = commandList.get(choice);
         command.execute();
     }
+
+    public int getSize(){
+        return commandList.size();
+    }
 }

@@ -34,8 +34,31 @@ public class ConsoleUI implements View {
     @Override
     public void execute() throws IOException, ClassNotFoundException {
         System.out.println("Введите номер команды:");
-        int numCommand = scanner.nextInt();
-        menu.execute(numCommand);
+        String line = scanner.next();
+        if (checkTextForInt(line)) {
+            int numCommand = Integer.parseInt(line);
+            if (checkCommand(numCommand)){
+                menu.execute(numCommand);
+            }
+        }
+    }
+
+    private boolean checkTextForInt(String text){
+        if (text.matches("[0-9]+")){
+            return true;
+        } else {
+            System.out.println("Ошибка ввода");
+            return false;
+        }
+    }
+
+    private boolean checkCommand(int numCommand){
+        if (numCommand < menu.getSize()){
+            return true;
+        } else {
+            System.out.println("Ошибка ввода");
+            return false;
+        }
     }
 
     @Override
